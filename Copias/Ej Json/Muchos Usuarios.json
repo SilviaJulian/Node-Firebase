@@ -1,0 +1,162 @@
+{
+  "1253": {
+    "COORDENADAS": {
+      "LAT": -6.476852, 
+      "LONG": -76.387903
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1253,
+	"PROV_ID":1,
+	"TP_ROUTE_ID":1,
+	"DEST_ID":7
+  },
+  "1254": {
+    "COORDENADAS": {
+      "LAT": -6.469439, 
+      "LONG": -76.365291
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1254,
+	"PROV_ID":1,
+	"TP_ROUTE_ID":1,
+	"DEST_ID":7
+  },
+  "1255": {
+    "COORDENADAS": {
+      "LAT": -6.485963, 
+      "LONG": -76.368134
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1255,
+	"PROV_ID":1,
+	"TP_ROUTE_ID":1,
+	"DEST_ID":9
+  },
+  "1308": {
+    "COORDENADAS": {
+      "LAT": -6.517429, 
+      "LONG": -76.364617
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1308,
+	"PROV_ID":1,
+	"TP_ROUTE_ID":2,
+	"DEST_ID":8
+  },
+  "1319": {
+    "COORDENADAS": {
+      "LAT": -6.548806, 
+      "LONG": -76.311398
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1319,
+	"PROV_ID":1,
+	"TP_ROUTE_ID":2,
+	"DEST_ID":8
+  },
+  "1259": {
+    "COORDENADAS": {
+      "LAT": -6.523227, 
+      "LONG": -76.442207
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1259,
+	"PROV_ID":2,
+	"TP_ROUTE_ID":1,
+	"DEST_ID":9
+  },
+  "1260": {
+    "COORDENADAS": {
+      "LAT": -6.509583, 
+      "LONG": -76.521515
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1260,
+	"PROV_ID":2,
+	"TP_ROUTE_ID":1,
+	"DEST_ID":5
+  },
+  "1267": {
+    "COORDENADAS": {
+      "LAT": -6.481951, 
+      "LONG": -76.541427
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1267,
+	"PROV_ID":2,
+	"TP_ROUTE_ID":2,
+	"DEST_ID":8
+  },
+  "1268": {
+    "COORDENADAS": {
+      "LAT": -6.420204, 
+      "LONG": -76.577133 
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1268,
+	"PROV_ID":2,
+	"TP_ROUTE_ID":2,
+	"DEST_ID":6
+  },
+  "1269": {
+    "COORDENADAS": {
+      "LAT": -6.523906, 
+      "LONG": -76.719612
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1269,
+	"PROV_ID":2,
+	"TP_ROUTE_ID":2,
+	"DEST_ID":6
+  }
+}

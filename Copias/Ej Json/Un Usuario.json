@@ -1,0 +1,16 @@
+{
+  "1254": {
+    "COORDENADAS": {
+      "LAT": 19.438856,
+      "LONG": -99.21388
+    },
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "NAV": 0,
+    "ONLINE": 1,
+	"PROV_ID":1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": 0,
+    "TROUTE_ID": 1254
+  }
+}

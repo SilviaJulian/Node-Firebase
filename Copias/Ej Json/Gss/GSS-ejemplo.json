@@ -1,0 +1,42 @@
+{
+  "1": {
+    "MENSAJE_PV": {
+      "Titulo": "Proveedor",
+      "Txt": "Mensaje Proveedor",
+      "idMsj": 123
+    },
+    "RUTAS": {
+      "1254": {
+        "CONDUCTOR": {
+          "123": {
+            "AGENTES": {
+              "1234": {
+                "COORDENADAS": {
+                  "Lat": 90,
+                  "Long": 180
+                },
+                "MENSAJE_AGENTE": {
+                  "Titulo": "Agente",
+                  "Txt": "Mensaje Agente",
+                  "idMsj": 123
+                },
+                "Visible": 0,
+                "idServicio": 1402
+              }
+            },
+            "MENSAJE_CONDUCTOR": {
+              "Titulo": "Conductor",
+              "Txt": "Mensaje Conductor",
+              "idMsj": 123
+            }
+          }
+        },
+        "MENSAJE_RUTA": {
+          "Titulo": "Ruta",
+          "Txt": "Mensaje Ruta",
+          "idMsj": 123
+        }
+      }
+    }
+  }
+}

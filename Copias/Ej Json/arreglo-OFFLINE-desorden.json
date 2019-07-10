@@ -1,0 +1,134 @@
+{
+    "OFFLINE": [
+        {
+            "COORDENADAS": {
+                "LAT": 19.438271,
+                "LONG": -99.201452
+            },
+            "DATETIME": "2019-01-19 05:37:03",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.436805,
+                "LONG": -99.203214
+            },
+            "DATETIME": "2019-01-19 05:34:10",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.440263,
+                "LONG": -99.200744
+            },
+            "DATETIME": "2019-01-19 05:39:03",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.438897,
+                "LONG": -99.200841
+            },
+            "DATETIME": "2019-01-19 05:38:03",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.438328,
+                "LONG": -99.202862
+            },
+            "DATETIME": "2019-01-19 05:36:03",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.438078,
+                "LONG": -99.203142
+            },
+            "DATETIME": "2019-01-19 05:35:35",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.437407,
+                "LONG": -99.203168
+            },
+            "DATETIME": "2019-01-19 05:35:00",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.440263,
+                "LONG": -99.200744
+            },
+            "DATETIME": "2019-01-19 05:38:43",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.436218,
+                "LONG": -99.203225
+            },
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        },
+        {
+            "COORDENADAS": {
+                "LAT": 19.438307,
+                "LONG": -99.202179
+            },
+            "DATETIME": "2019-01-19 05:36:53",
+            "EVENT_ID": 1,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": 0,
+            "TROUTE_ID": 1254
+        }
+    ]
+}

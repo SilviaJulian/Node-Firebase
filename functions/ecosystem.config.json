@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "my-service",
+      "script": "index.js",
+      "cwd": "C:/Users/NYV89/Documents/NodeJS/functions/",
+      "exec_mode": "fork",
+      "instances": 1,
+      "autorestart": true,
+      "watch": true,
+      "max_memory_restart": "3G",
+      "post_update": [
+        "npm install",
+        "echo Aplicando cambios"
+      ],
+      "force": true,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

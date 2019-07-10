@@ -1,0 +1,71 @@
+{
+  "Administrador" : {
+    "NodeJS" : {
+      "lastOffLine" : "2019-03-08T18:29:47.034Z",
+      "lastOnLine" : "2019-03-08T18:41:58.300Z",
+      "onlineState" : true,
+      "status" : "Online."
+    }
+  },
+  "Location" : {
+    "12" : { /* idAgente */
+      "Lat" : 90,
+      "Long" : 180
+    }
+  },
+  "Menssages" : {
+    "AGENTS" : {
+      "123" : { /* idAgente */
+        "DATA" : {
+          "id" : 1,
+          "text" : "Hola, Agente 123",
+          "title" : "URGENTE"
+        },
+        "last" : 789
+      },
+      "ALL_AGENTS" : {
+        "id" : 1,
+        "text" : "Hola, a Todos los Agentes ",
+        "title" : "URGENTE"
+      }
+    },
+    "ALL_USERS" : {
+      "id" : 1,
+      "text" : "Hola, a Todos los Usuarios",
+      "title" : "Urgente"
+    },
+    "PROVIDERS" : {
+      "123" : { /* idProveedor */
+        "456" : {
+          "DATA" : {
+            "Hola, " : "Hola, Conductor 456",
+            "id" : 1,
+            "title" : "URGENTE"
+          },
+          "last" : 789
+        },
+        "ALL_DRIVES" : {
+          "id" : 1,
+          "text" : "Hola, A todos los Conductores",
+          "title" : "URGENTE"
+        }
+      }
+    }
+  },
+  "Tracking" : {
+    "1254" : { /* idRuta */
+      "COORDENADAS" : {
+        "LAT" : 19.438856,
+        "LONG" : -99.21388
+      },
+      "DATETIME" : "2019-01-19 05:34:03",
+      "EVENT_ID" : 1,
+      "NAV" : 0,
+      "ONLINE" : 1,
+      "PROV_ID" : 1,
+      "TDAILY_SERVICE_ID" : 5623,
+      "TOLERANCE" : 0,
+      "TROUTE_ID" : 1254
+    }
+  }
+}

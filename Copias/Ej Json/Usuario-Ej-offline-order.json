@@ -1,0 +1,123 @@
+{
+    "DATETIME": "2019-01-19 05:34:03",
+    "EVENT_ID": 1,
+    "LATITUDE": 19.438856,
+    "LONGITUDE": -99.21388,
+    "NAV": 0,
+    "ONLINE": 1,
+    "TDAILY_SERVICE_ID": 5623,
+    "TOLERANCE": "NULL",
+    "TROUTE_ID": 1254,
+    "OFFLINE": [
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.436218,
+            "LONGITUDE": -99.203225,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.436805,
+            "LONGITUDE": -99.203214,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.437407,
+            "LONGITUDE": -99.203168,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.438078,
+            "LONGITUDE": -99.203142,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.438328,
+            "LONGITUDE": -99.202862,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.438307,
+            "LONGITUDE": -99.202179,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.438271,
+            "LONGITUDE": -99.201452,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.438897,
+            "LONGITUDE": -99.200841,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.440263,
+            "LONGITUDE": -99.200744,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        },
+        {
+            "DATETIME": "2019-01-19 05:34:03",
+            "EVENT_ID": 1,
+            "LATITUDE": 19.440263,
+            "LONGITUDE": -99.200744,
+            "NAV": 0,
+            "ONLINE": 1,
+            "TDAILY_SERVICE_ID": 5623,
+            "TOLERANCE": "NULL",
+            "TROUTE_ID": 1254
+        }
+    ]
+}

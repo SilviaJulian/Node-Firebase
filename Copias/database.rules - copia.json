@@ -1,0 +1,214 @@
+{
+  "rules": {
+      "Administrador": {
+          "NodeJS": {
+              ".read": "auth != null && (auth.provider == 'anonymous' || auth.provider == 'account')",
+              ".write": "auth.provider == 'anonymous'"
+          }
+      },
+      "GSS": {                    
+          "$idProveedor": {   
+              ".validate":"newData.hasChildren(['RUTAS'])",   
+              "RUTAS":{
+                 "$idRuta": { 
+                   ".validate":"newData.hasChildren(['CONDUCTOR'])",  
+                      "CONDUCTOR": {
+                        
+                       "$idConductor": {                           
+                        ".validate":"newData.hasChildren(['AGENTES'])",  
+                         "AGENTES": {
+                            "$idAgente": {
+                              ".read": "auth.uid == $idConductor && data.child('Visible').val() == true",
+                             // ".write":"auth.uid == $idAgente && newData.child('idServicio').val() == root.child('Tracking').child('12').child('TDAILY_SERVICE_ID').val()",        
+                              ".write":"auth.uid == $idAgente && root.child('Tracking').child('' + $idRuta + '').val()== 1254",         
+                              ".validate": "newData.hasChildren(['COORDENADAS','Visible','idServicio'])",
+                               "COORDENADAS": {
+                                 ".validate": "newData.hasChildren(['Lat','Long'])",
+                                   "Lat": {".validate": "newData.isNumber() &&
+                                                          newData.val() >= -90 &&
+                                                          newData.val() <= 90"
+                                          },
+                                  "Long": {".validate": "newData.isNumber() &&
+                                                           newData.val() >= -180 &&
+                                                           newData.val() <= 180"
+                                          }
+                                },
+                              "Visible": {".validate": "newData.isBoolean()"},
+                              "idServicio": {".validate": "newData.isNumber() && newData.val() > 0"},
+                              "MENSAJE_AGENTE": {
+                                ".validate": "newData.hasChildren(['idMsj','Txt','Titulo'])",
+                                    "idMsj": {".validate":"newData.isNumber() &&
+                                                newData.val() > 0"
+                                      },
+                                    "Txt": {".validate":"newData.isString() &&
+                                            newData.val().length > 0 &&
+                                             newData.val().length < 250"
+                                      },
+                                    "Titulo": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 30"
+                                          }
+                                      }
+                                  }                                   
+                          },
+                         "MENSAJE_CONDUCTOR": {
+                           ".read": "$idConductor == auth.uid && (auth.provider == 'anonymous' || auth.provider == 'account')",
+                           ".validate": "newData.hasChildren(['idMsj','Txt','Titulo'])",
+                                "idMsj": {".validate":"newData.isNumber() &&
+                                            newData.val() > 0"
+                                  },
+                              "Txt": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 250"
+                                  },
+                                "Titulo": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 30"
+                                    }
+                            }
+                          }
+                      },
+                      "MENSAJE_RUTA": {  
+                        ".read":"$idRuta == auth.uid && (auth.provider == 'anonymous' || auth.provider == 'account')",
+                         ".validate": "newData.hasChildren(['idMsj','Txt','Titulo'])",
+                            "idMsj": {".validate":"newData.isNumber() &&
+                                            newData.val() > 0"
+                                },
+                            "Txt": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 250"
+                                },
+                            "Titulo": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 30"
+                                }
+                      }
+                  }                    
+              },
+              "MENSAJE_PV": { //Lectura solo si existe en RUTAS
+                  ".read": "($idProveedor == auth.uid || data.parent().child('RUTAS').child(auth.uid).exists()) && (auth.provider == 'anonymous' || auth.provider == 'account')",
+                  ".validate": "newData.hasChildren(['idMsj','Txt','Titulo'])",
+                  "idMsj": {".validate":"newData.isNumber() &&
+                                            newData.val() > 0"
+                        },
+                  "Txt": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 250"
+                        },
+                  "Titulo": {".validate":"newData.isString() &&
+                                        newData.val().length > 0 &&
+                                         newData.val().length < 30"
+                      }
+              }
+          }
+      },
+
+  "Tracking": {
+      "$idRoute": {          
+          ".read":"auth != null && (auth.provider == 'anonymous' || auth.provider == 'account')
+                      && root.child('Administrador').child('NodeJS').child('onlineState').val() == true && auth.uid == $idRoute",            
+         ".write": "auth != null && (auth.provider == 'anonymous' || auth.provider == 'account')
+                     && '' + newData.child('TROUTE_ID').val() + '' == $idRoute
+                     && root.child('Administrador').child('NodeJS').child('onlineState').val() == true
+                     && root.child('GSS').child('' + newData.child('PROV_ID').val() + '').child('RUTAS').child('' + newData.child('TROUTE_ID').val() + '').exists()",		          
+          ".validate": "newData.hasChildren(['COORDENADAS','DATETIME','EVENT_ID','NAV','ONLINE','PROV_ID','TDAILY_SERVICE_ID','TOLERANCE','TROUTE_ID'])",
+              "COORDENADAS": {
+                  ".validate": "newData.hasChildren(['Lat','Long'])",
+                  "Lat": { //varchar(50) --NO NULL--
+                      ".validate": "newData.isNumber() &&
+                                  newData.val() >= -90 &&
+                                  newData.val() <= 90"
+                  },
+                  "Long": { //varchar(50) --NO NULL--
+                      ".validate": "newData.isNumber() &&
+                                  newData.val() >= -180 &&
+                                  newData.val() <= 180"
+                  }
+              },
+              "DATETIME": { // datetime --NO NULL--
+                  ".validate": "newData.isString() &&
+                     newData.val().matches(/^(20)[0-9][0-9][-\\/. ](0[1-9]|1[0-2])[-\\/. ](0[1-9]|[12][0-9]|3[01]) ([01][0-9]|2[0-3])(:)([0-5][0-9])(:)([0-5][0-9])$/)"
+              },
+              "EVENT_ID": { //int(11) --NO NULL--
+                  ".validate": "newData.isNumber() &&
+                          newData.val() >= 1 &&
+                          newData.val() <= 13"
+              },
+              "NAV": { // bit(1) --NO NULL--
+                  ".validate": "newData.isNumber() &&
+                          newData.val() >= 0 &&
+                          newData.val() <= 1"
+              },
+              "ONLINE": { // bit(1) --NO NULL--
+                  ".validate": "newData.isNumber() &&
+                          newData.val() >= 0 &&
+                          newData.val() <= 1"
+              },
+             "PROV_ID": { //int(11) --NO NULL--
+                  ".validate": "newData.isNumber() && newData.val() > 0"
+              },
+              "TDAILY_SERVICE_ID": { //int(11) null
+                  ".validate": "newData.isNumber() &&
+                          newData.val() > 0"
+              },
+              "TOLERANCE": { // bit(1) null
+                  ".validate": "newData.isNumber() &&
+                          newData.val() >= 0 &&
+                          newData.val() <= 1"
+              },
+              "TROUTE_ID": { //int(11) --NO NULL--
+                  ".validate": "newData.isNumber() &&
+                          newData.val() > 0"
+              },
+              "OFFLINE": {
+                  ".validate": "newData.hasChildren(['DATETIME','EVENT_ID','COORDENADAS','NAV','ONLINE','TDAILY_SERVICE_ID','TOLERANCE','TROUTE_ID'])",
+                  "DATETIME": { // datetime --NO NULL--
+                      ".validate": "newData.isString() &&
+                         newData.val().matches(/^(20)[0-9][0-9][-\\/. ](0[1-9]|1[0-2])[-\\/. ](0[1-9]|[12][0-9]|3[01]) ([01][0-9]|2[0-3])(:)([0-5][0-9])(:)([0-5][0-9])$/)"
+                  },
+                  "EVENT_ID": { //int(11) --NO NULL--
+                      ".validate": "newData.isNumber() &&
+                          newData.val() >= 1 &&
+                          newData.val() <= 13"
+                  },
+                  "COORDENADAS": {
+                      ".validate": "newData.hasChildren(['Lat','Long'])",
+                      "Lat": { //varchar(50) --NO NULL--
+                          ".validate": "newData.isNumber() &&
+                                  newData.val() >= -90 &&
+                                  newData.val() <= 90"
+                      },
+                      "Long": { //varchar(50) --NO NULL--
+                          ".validate": "newData.isNumber() &&
+                                  newData.val() >= -180 &&
+                                  newData.val() <= 180"
+                      }
+                  },
+                  "NAV": { // bit(1) --NO NULL--
+                      ".validate": "newData.isNumber() &&
+                          newData.val() >= 0 &&
+                          newData.val() <= 1"
+                  },
+                  "ONLINE": { // bit(1) --NO NULL--
+                      ".validate": "newData.isNumber() &&
+                          newData.val() >= 0 &&
+                          newData.val() <= 1"
+                  },
+                  "TDAILY_SERVICE_ID": { //int(11) null
+                      ".validate": "newData.isNumber() &&
+                          newData.val() > 0"
+                  },
+                  "TOLERANCE": { // bit(1) null
+                      ".validate": "newData.isNumber() &&
+                          newData.val() >= 0 &&
+                          newData.val() <= 1"
+                  },
+                  "TROUTE_ID": { //int(11) --NO NULL--
+                      ".validate": "newData.isNumber() &&
+                          newData.val() > 0"
+                  }
+              }
+          }
+      }
+  }
+}
